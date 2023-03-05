@@ -40,3 +40,5 @@ logger = MyLogger(conf.get("log", "name"), level=conf.get("log", "leaver"),  fil
 if __name__ == '__main__':
     logger.info("试一下")
 
+#试试看
+
