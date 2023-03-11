@@ -4,11 +4,11 @@
 """
 import logging
 from handle_config import conf
-
+log_level = conf.get("log","leaver")
 
 class MyLogger(logging.Logger):
 
-    def __init__(self, name, level=logging.INFO, file=None):
+    def __init__(self, name, level=log_level, file=None):
         # 设置输出级别，输出渠道，输出格式
         super().__init__(name, level)
         # 设置日志输出格式
