@@ -38,9 +38,11 @@ def send_requests(method,url,data=None,token=None):
 if __name__ == '__main__':
     p = send_requests(method="sss",url="iji",data="jjj",token="jij")
     url = "http://store.test.dstcar.com/dst-partner-apis/api-store/public/verifyCode"
-    send_data = {'phone': '15070720246'}
+    send_data = {'phone': '150707202461111111'}
     a = send_requests(method="post",url=url, data=send_data)
-    print(a.json())
+    print(a.status_code)
+    print(a.status_code==200)
+    print(a.json()["code"]==9000)
 
     url1 = "http://store.test.dstcar.com/dst-partner-apis/api-store/public/login"
     send_data = {"phone": "15070720246", "verifyCode": "999999"}
