@@ -1,8 +1,5 @@
 import unittest
-from test_danyuanceshi import TestLogin
-from unittestreport import TestRunner
 from BeautifulReport import BeautifulReport
-import ddt
 import os
 
 # 获取当前路径下的测试数据文件的绝对路径

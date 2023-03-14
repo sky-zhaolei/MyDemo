@@ -5,7 +5,7 @@ from handle_excel import Handle_Excel
 import os
 from handle_log import logger
 
-file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "test_data.xlsx")
+file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../test_data.xlsx")
 all_datas = Handle_Excel(file_path, "Sheet1").read_all_datas()
 
 

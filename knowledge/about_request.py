@@ -16,4 +16,4 @@ url2 = "http://store.test.dstcar.com/dst-partner-apis/api-store/store/user/getUs
 send_header = {"token": get_token}
 print(send_header)
 b = requests.post(url2,headers=send_header)
-print(b.json())
+print(type(b.json()["code"]))

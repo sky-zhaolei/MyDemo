@@ -41,6 +41,9 @@ class Handle_Excel():
 if __name__ == '__main__':
     import os
     file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "test_data.xlsx")
-    get_datas = Handle_Excel(file_path, "Sheet1")
-    print(get_datas.read_titles())
-    print(get_datas.read_all_datas())
+    get_datas = Handle_Excel(file_path, "maintainself")
+    # print(get_datas.read_titles())
+    # print(get_datas.read_all_datas())
+    all_datas = get_datas.read_all_datas()
+    print(all_datas)
+    print(type(eval(all_datas[0]["assert"])["code"]))
